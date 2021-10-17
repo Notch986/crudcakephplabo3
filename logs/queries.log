@@ -1,0 +1,181 @@
+2021-10-16 20:47:43 Debug: duration=14 rows=5 SHOW FULL COLUMNS FROM `categories`
+2021-10-16 20:47:43 Debug: duration=0 rows=1 SHOW INDEXES FROM `categories`
+2021-10-16 20:47:43 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'categories' AND rc.TABLE_NAME = 'categories'
+2021-10-16 20:47:43 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'categories'
+2021-10-16 20:52:11 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `categories`
+2021-10-16 20:52:11 Debug: duration=0 rows=1 SHOW INDEXES FROM `categories`
+2021-10-16 20:52:11 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'categories' AND rc.TABLE_NAME = 'categories'
+2021-10-16 20:52:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'categories'
+2021-10-16 20:52:11 Debug: duration=0 rows=0 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 20:52:11 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 20:52:37 Debug: duration=0 rows=0 BEGIN
+2021-10-16 20:52:37 Debug: duration=3 rows=1 INSERT INTO categories (Name, Status, Abbreviation, Description) VALUES ('Smartphones', 1, 'Celus', 'Celular inteligente')
+2021-10-16 20:52:37 Debug: duration=0 rows=0 COMMIT
+2021-10-16 20:52:37 Debug: duration=2 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 20:52:37 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 20:54:28 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `categories`
+2021-10-16 20:54:28 Debug: duration=0 rows=1 SHOW INDEXES FROM `categories`
+2021-10-16 20:54:28 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'categories' AND rc.TABLE_NAME = 'categories'
+2021-10-16 20:54:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'categories'
+2021-10-16 20:54:28 Debug: duration=0 rows=0 BEGIN
+2021-10-16 20:54:28 Debug: duration=0 rows=1 INSERT INTO categories (Name, Status, Abbreviation, Description) VALUES ('Radios', 1, 'Rdio', 'Radio FM  y AM')
+2021-10-16 20:54:28 Debug: duration=0 rows=0 COMMIT
+2021-10-16 20:54:28 Debug: duration=2 rows=2 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 20:54:28 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 20:54:49 Debug: duration=3 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories WHERE Categories.ID = 1 LIMIT 1
+2021-10-16 20:54:53 Debug: duration=0 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories WHERE Categories.ID = 1 LIMIT 1
+2021-10-16 20:54:53 Debug: duration=0 rows=0 BEGIN
+2021-10-16 20:54:53 Debug: duration=1 rows=1 UPDATE categories SET Description = 'Celular inteligente y caros' WHERE ID = 1
+2021-10-16 20:54:53 Debug: duration=0 rows=0 COMMIT
+2021-10-16 20:54:53 Debug: duration=1 rows=2 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 20:54:54 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 20:55:08 Debug: duration=1 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories WHERE Categories.ID = 2 LIMIT 1
+2021-10-16 20:55:08 Debug: duration=0 rows=0 BEGIN
+2021-10-16 20:55:08 Debug: duration=1 rows=1 DELETE FROM categories WHERE ID = 2
+2021-10-16 20:55:08 Debug: duration=0 rows=0 COMMIT
+2021-10-16 20:55:08 Debug: duration=0 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 20:55:08 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 21:02:42 Debug: duration=3 rows=5 SHOW FULL COLUMNS FROM `categories`
+2021-10-16 21:02:42 Debug: duration=0 rows=1 SHOW INDEXES FROM `categories`
+2021-10-16 21:02:42 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'categories' AND rc.TABLE_NAME = 'categories'
+2021-10-16 21:02:42 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'categories'
+2021-10-16 21:02:44 Debug: duration=1 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 21:02:44 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 21:13:58 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `categories`
+2021-10-16 21:13:58 Debug: duration=0 rows=1 SHOW INDEXES FROM `categories`
+2021-10-16 21:13:58 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'categories' AND rc.TABLE_NAME = 'categories'
+2021-10-16 21:13:58 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'categories'
+2021-10-16 21:14:07 Debug: duration=1 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 21:14:07 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 21:26:32 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `categories`
+2021-10-16 21:26:32 Debug: duration=0 rows=1 SHOW INDEXES FROM `categories`
+2021-10-16 21:26:32 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'categories' AND rc.TABLE_NAME = 'categories'
+2021-10-16 21:26:32 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'categories'
+2021-10-16 21:26:33 Debug: duration=1 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 21:26:33 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 21:26:42 Debug: duration=0 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 21:26:42 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 21:26:55 Debug: duration=0 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 21:26:55 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 21:27:12 Debug: duration=0 rows=0 BEGIN
+2021-10-16 21:27:12 Debug: duration=0 rows=1 INSERT INTO categories (Name, Status, Abbreviation, Description) VALUES ('2', 1, 'Celus', 'Celulares para adulto mayor')
+2021-10-16 21:27:12 Debug: duration=0 rows=0 COMMIT
+2021-10-16 21:27:12 Debug: duration=1 rows=2 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 21:27:13 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-16 21:27:29 Debug: duration=0 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories WHERE Categories.ID = 3 LIMIT 1
+2021-10-16 21:27:36 Debug: duration=1 rows=1 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories WHERE Categories.ID = 3 LIMIT 1
+2021-10-16 21:27:36 Debug: duration=0 rows=0 BEGIN
+2021-10-16 21:27:36 Debug: duration=0 rows=1 UPDATE categories SET Name = 'Celulares jorgito' WHERE ID = 3
+2021-10-16 21:27:36 Debug: duration=0 rows=0 COMMIT
+2021-10-16 21:27:36 Debug: duration=0 rows=2 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-16 21:27:36 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-17 00:35:35 Debug: duration=6 rows=4 SHOW FULL COLUMNS FROM `providers`
+2021-10-17 00:35:35 Debug: duration=1 rows=1 SHOW INDEXES FROM `providers`
+2021-10-17 00:35:35 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'providers' AND rc.TABLE_NAME = 'providers'
+2021-10-17 00:35:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'providers'
+2021-10-17 00:39:46 Debug: duration=6 rows=5 SHOW FULL COLUMNS FROM `categories`
+2021-10-17 00:39:46 Debug: duration=1 rows=1 SHOW INDEXES FROM `categories`
+2021-10-17 00:39:46 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'categories' AND rc.TABLE_NAME = 'categories'
+2021-10-17 00:39:46 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'categories'
+2021-10-17 00:39:46 Debug: duration=1 rows=2 SELECT Categories.ID AS `Categories__ID`, Categories.Name AS `Categories__Name`, Categories.Status AS `Categories__Status`, Categories.Abbreviation AS `Categories__Abbreviation`, Categories.Description AS `Categories__Description` FROM categories Categories LIMIT 20 OFFSET 0
+2021-10-17 00:39:46 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM categories Categories
+2021-10-17 00:39:51 Debug: duration=2 rows=4 SHOW FULL COLUMNS FROM `providers`
+2021-10-17 00:39:51 Debug: duration=0 rows=1 SHOW INDEXES FROM `providers`
+2021-10-17 00:39:51 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'providers' AND rc.TABLE_NAME = 'providers'
+2021-10-17 00:39:51 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'providers'
+2021-10-17 00:39:51 Debug: duration=1 rows=1 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers LIMIT 20 OFFSET 0
+2021-10-17 00:39:51 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM providers Providers
+2021-10-17 00:42:58 Debug: duration=2 rows=4 SHOW FULL COLUMNS FROM `providers`
+2021-10-17 00:42:58 Debug: duration=0 rows=1 SHOW INDEXES FROM `providers`
+2021-10-17 00:42:58 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'providers' AND rc.TABLE_NAME = 'providers'
+2021-10-17 00:42:58 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'providers'
+2021-10-17 00:44:26 Debug: duration=1 rows=1 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers LIMIT 20 OFFSET 0
+2021-10-17 00:44:26 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM providers Providers
+2021-10-17 00:45:38 Debug: duration=2 rows=4 SHOW FULL COLUMNS FROM `providers`
+2021-10-17 00:45:38 Debug: duration=0 rows=1 SHOW INDEXES FROM `providers`
+2021-10-17 00:45:38 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'pweb2' AND kcu.TABLE_NAME = 'providers' AND rc.TABLE_NAME = 'providers'
+2021-10-17 00:45:38 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'providers'
+2021-10-17 00:45:38 Debug: duration=0 rows=0 BEGIN
+2021-10-17 00:45:38 Debug: duration=0 rows=1 INSERT INTO providers (Name, Status, Phone) VALUES ('PeruanaInformatica', 1, '958418636')
+2021-10-17 00:45:38 Debug: duration=0 rows=0 COMMIT
+2021-10-17 00:45:38 Debug: duration=1 rows=2 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers LIMIT 20 OFFSET 0
+2021-10-17 00:45:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM providers Providers
+2021-10-17 00:45:56 Debug: duration=1 rows=1 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers WHERE Providers.ID = 1 LIMIT 1
+2021-10-17 00:46:06 Debug: duration=1 rows=1 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers WHERE Providers.ID = 1 LIMIT 1
+2021-10-17 00:46:06 Debug: duration=0 rows=0 BEGIN
+2021-10-17 00:46:06 Debug: duration=1 rows=1 UPDATE providers SET Phone = '941568472' WHERE ID = 1
+2021-10-17 00:46:06 Debug: duration=0 rows=0 COMMIT
+2021-10-17 00:46:06 Debug: duration=1 rows=2 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers LIMIT 20 OFFSET 0
+2021-10-17 00:46:06 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM providers Providers
+2021-10-17 00:46:14 Debug: duration=2 rows=1 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers WHERE Providers.ID = 1 LIMIT 1
+2021-10-17 00:46:18 Debug: duration=1 rows=2 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers LIMIT 20 OFFSET 0
+2021-10-17 00:46:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM providers Providers
+2021-10-17 00:46:26 Debug: duration=1 rows=1 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers WHERE Providers.ID = 1 LIMIT 1
+2021-10-17 00:47:02 Debug: duration=1 rows=2 SELECT Providers.ID AS `Providers__ID`, Providers.Name AS `Providers__Name`, Providers.Status AS `Providers__Status`, Providers.Phone AS `Providers__Phone` FROM providers Providers LIMIT 20 OFFSET 0
+2021-10-17 00:47:02 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM providers Providers
